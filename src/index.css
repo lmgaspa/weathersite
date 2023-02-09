@@ -9,5 +9,12 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    monospace;    
+}
+
+html {
+  height: 100%;
+  background: linear-gradient(220deg, #053e55, #5badff);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
