@@ -68,7 +68,8 @@ function App() {
           </div>
         </>
       ) : (
-        <h4>to see the weather of your city, please allow access to your location in your browser, thank you</h4>
+        <h4>to see the weather of your city, please allow access to your location in your browser, maybe you browser,
+          block the access, allowed that for site can work, thank you</h4>
       )}
     </div>
   );
