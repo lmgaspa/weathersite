@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { BsCloudSun, BsCloudMoon, BsCloudRain, BsCloudLightningRain, BsCloudSnow } from 'react-icons/bs';
+import { BsSun, BsMoon, BsCloudSun, BsCloudMoon, BsCloudRain, BsCloudRainHeavy, BsCloudLightningRain, BsCloudSnow, BsCloudFog } from 'react-icons/bs';
 import './App.css'
 
 function App() {
@@ -40,14 +40,24 @@ function App() {
     } else if (id >= 300 && id <= 321) {
       weatherIcon = <BsCloudRain className='icon' />;
     } else if (id >= 500 && id <= 531) {
-      weatherIcon = <BsCloudRain className='icon' />;
+      weatherIcon = <BsCloudRainHeavy className='icon' />;
     } else if (id >= 600 && id <= 622) {
       weatherIcon = <BsCloudSnow className='icon' />;
+    } else if (id >= 700 && id <= 781) {
+      weatherIcon = <BsCloudFog className='icon' />;
     } else if (id >= 801 && id <= 804) {
-      weatherIcon = new Date().getHours() >= 6 && new Date().getHours() <= 18 ? (
+      const currentHour = new Date().getHours();
+      weatherIcon = currentHour >= 6 && currentHour <= 18 ? (
         <BsCloudSun className='icon' />
       ) : (
         <BsCloudMoon className='icon' />
+      );
+    } else if (id === 800) {
+      const currentHour = new Date().getHours();
+      weatherIcon = currentHour >= 6 && currentHour <= 18 ? (
+        <BsSun className='icon' />
+      ) : (
+        <BsMoon className='icon' />
       );
     }
   }
