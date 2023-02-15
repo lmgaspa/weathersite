@@ -8,22 +8,37 @@
     margin-top: 50px;
   }
 
+  form {
+    margin-top: 10px;
+  }
+
+  label {
+    color: #4d01ff;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  input {
+    margin-left: 10px;
+    margin-right: 2px;
+  }
+
   h1 {
-    color: #eefa49;
+    color: #4d01ff;
     text-align: center;
     font-size: 56px;
     margin-bottom: 0;
   }
 
   h2 {
-    color: #eefa49;;
+    color: #4d01ff;
     text-align: center;
     font-size: 40px;
     margin-bottom: 0;
   }
 
   h3 {
-    color: #eefa49;;
+    color: #4d01ff;;
     text-align: center;
     font-size: 40px;
     margin-bottom: 10px;
@@ -38,7 +53,7 @@
   }
 
   .icon {
-    color: #eefa49;;
+    color: #4d01ff;
     text-align: center;
     font-size: 150px;
   }
