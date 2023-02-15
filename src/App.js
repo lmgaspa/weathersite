@@ -74,10 +74,10 @@ export default function App() {
             <h1>WEATHER SITE</h1>
             <form onSubmit={handleSubmit}>
                 <label>
-                    Type you city:
+                    City:
                     <input type="text" value={cityname} onChange={event => setCityName(event.target.value)} />
                 </label>
-                <button type="submit">Buscar</button>
+                <button type="submit">Submit</button>
             </form>
             {weatherData && (
                 <div>
